@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Path
 from pydantic import BaseModel
 from typing import Annotated
-from users import router as users_router
+from users.views import router as users_router
+
 
 app=FastAPI()
 app.include_router(users_router, tags=["users"])
