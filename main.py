@@ -9,6 +9,7 @@ app.include_router(users_router, tags=["users"])
 
 
 
+
 @app.get("/")
 def root():
     return "yop!"
